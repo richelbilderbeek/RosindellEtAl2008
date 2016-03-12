@@ -1,8 +1,14 @@
-include(../../ConsoleApplicationNoWeffcpp.pri)
 include(../../Libraries/GeneralConsole.pri)
-include(ToolRosindellEtAl2008Console.pri)
+include(RosindellEtAl2008Console.pri)
 
 include(../../Libraries/Urho3d.pri)
+
+# C++11
+CONFIG += c++11
+QMAKE_CXX = g++-4.8
+QMAKE_LINK = g++-4.8
+QMAKE_CC = gcc-4.8
+QMAKE_CXXFLAGS += -Wall -Wextra -Weffc++ -Werror -std=c++11
 
 LIBS += \
     -lpthread \
@@ -21,4 +27,4 @@ HEADERS += \
     cameramaster.h
 
 RESOURCES += \
-    ToolRosindellEtAl2008.qrc
+    RosindellEtAl2008.qrc
