@@ -28,3 +28,9 @@
 *.app
 Urho3D/
 *.pro.user
+Makefile
+RosindellEtAl2008
+RosindellEtAl2008Console
+RosindellEtAl2008Desktop
+ui_*
+moc_*
