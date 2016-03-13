@@ -54,6 +54,17 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 #include "cameramaster.h"
 
+template <class T>
+inline int MyClamp(T value, T min, T max)
+{
+    if (value < min)
+        return min;
+    else if (value > max)
+        return max;
+    else
+        return value;
+}
+
 
 Vector3 Scale(const Vector3& lhs, const Vector3& rhs)
 {
@@ -151,7 +162,7 @@ void CameraMaster::HandleSceneUpdate(StringHash /* eventType */, VariantMap &eve
     pitchDelta_ = 0.5*(pitchDelta_ + MOUSE_SENSITIVITY * mouseMove.y_);
     yaw_ += yawDelta_;
     pitch_ += pitchDelta_;
-    pitch_ = Clamp(pitch_, -89.0, 89.0);
+    pitch_ = MyClamp(pitch_, -89.0, 89.0);
     //Construct new orientation for the camera scene node from yaw and pitch. Roll is fixed to zero
     translationNode_->SetRotation(Quaternion(0.0f, 0.0f, 0.0f));
     rotationNode_->SetRotation(Quaternion(pitch_, yaw_, 0.0f));
