@@ -1,7 +1,7 @@
-include(../../Libraries/GeneralConsole.pri)
+include(../RibiLibraries/GeneralConsole.pri)
 include(RosindellEtAl2008Console.pri)
 
-include(../../Libraries/Urho3d.pri)
+include(../RibiLibraries/Urho3d.pri)
 
 # C++11
 CONFIG += c++11

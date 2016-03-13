@@ -20,7 +20,12 @@ addons:
     - libboost-all-dev
 
 script: 
+ - git clone https://github.com/richelbilderbeek/RibiLibraries
+ - cd RibiLibraries
  - ./Urho3d.sh
+ - cd ..
+ - git clone https://github.com/richelbilderbeek/RosindellEtAl2008
+ - cd RosindellEtAl2008
  - qmake ToolRosindellEtAl2008Console.pro
  - make
  - qmake ToolRosindellEtAl2008Desktop.pro

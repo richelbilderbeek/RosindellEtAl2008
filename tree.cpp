@@ -72,7 +72,7 @@ Tree::Tree(
     m_min_speciation_rate{min_speciation_rate},
     m_nodes{},
     m_richness{0.0},
-    m_rnd{rng},
+    m_rnd(rng),
     m_tolerance{tolerance}
 {
 
