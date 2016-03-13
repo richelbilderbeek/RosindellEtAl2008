@@ -27,3 +27,4 @@
 *.out
 *.app
 Urho3D/
+*.pro.user
