@@ -26,11 +26,11 @@ script:
  - cd ..
  - git clone https://github.com/richelbilderbeek/RosindellEtAl2008
  - cd RosindellEtAl2008
- - qmake ToolRosindellEtAl2008Console.pro
+ - qmake RosindellEtAl2008Console.pro
  - make
- - qmake ToolRosindellEtAl2008Desktop.pro
+ - qmake RosindellEtAl2008Desktop.pro
  - make
- - qmake ToolRosindellEtAl2008Desktop3d.pro
+ - qmake RosindellEtAl2008Desktop3d.pro
  - make
 
 after_success:
