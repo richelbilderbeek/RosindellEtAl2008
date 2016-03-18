@@ -22,3 +22,5 @@ HEADERS += \
 
 RESOURCES += \
     RosindellEtAl2008.qrc
+
+QMAKE_CXXFLAGS += -Wno-unused-variable

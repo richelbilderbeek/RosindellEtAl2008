@@ -9,3 +9,5 @@ SOURCES += main.cpp \
 
 HEADERS += \
     grid.h
+
+QMAKE_CXXFLAGS += -Wno-unused-variable

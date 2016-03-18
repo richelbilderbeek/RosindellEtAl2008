@@ -12,3 +12,5 @@ FORMS += \
 
 HEADERS += \
     qttree.h
+
+QMAKE_CXXFLAGS += -Wno-unused-variable
