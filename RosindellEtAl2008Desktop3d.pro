@@ -6,9 +6,11 @@ include(../RibiLibraries/Urho3d.pri)
 
 LIBS += \
     -lpthread \
-    -lSDL2 \ #Otherwise use -lSDL
+    -lSDL \
     -ldl \
     -lGL
+
+# -lSDL2 \ #Otherwise use -lSDL
 
 SOURCES += \
     mastercontrol.cpp \
