@@ -9,7 +9,19 @@ before_install:
 install:
   - sudo apt-get install -qq g++-5
   - sudo apt-get install libx11-dev libxrandr-dev libasound2-dev libgl1-mesa-dev
-  - sudo apt-get install libboost-all-dev
+
+addons:
+  apt:
+    sources:
+    - boost-latest
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-5
+    - g++-5
+    - libboost1.55-all-dev
 
 script: 
  - ./build.sh
+
+
+# - sudo apt-get install libboost-all-dev
