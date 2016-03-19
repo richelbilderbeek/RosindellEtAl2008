@@ -87,10 +87,10 @@ void Rng::Test() noexcept
     }
     const double sum_a{std::accumulate(std::begin(v),std::end(v),0.0)};
     const double sum_b{std::accumulate(std::begin(w),std::end(w),0.0)};
-    const int n_68_a{ std::count_if(std::begin(v),std::end(v),[](const double x) { return x >= -1.0 && x <= 1.0; })};
-    const int n_68_b{ std::count_if(std::begin(w),std::end(w),[](const double x) { return x >= -1.0 && x <= 1.0; })};
-    const int n_95_a{ std::count_if(std::begin(v),std::end(v),[](const double x) { return x >= -2.0 && x <= 2.0; })};
-    const int n_95_b{ std::count_if(std::begin(w),std::end(w),[](const double x) { return x >= -2.0 && x <= 2.0; })};
+    const int n_68_a{static_cast<int>(std::count_if(std::begin(v),std::end(v),[](const double x) { return x >= -1.0 && x <= 1.0; }))};
+    const int n_68_b{static_cast<int>(std::count_if(std::begin(w),std::end(w),[](const double x) { return x >= -1.0 && x <= 1.0; }))};
+    const int n_95_a{static_cast<int>(std::count_if(std::begin(v),std::end(v),[](const double x) { return x >= -2.0 && x <= 2.0; }))};
+    const int n_95_b{static_cast<int>(std::count_if(std::begin(w),std::end(w),[](const double x) { return x >= -2.0 && x <= 2.0; }))};
     const double mean_a{static_cast<double>(sum_a)/static_cast<double>(n)};
     const double mean_b{static_cast<double>(sum_b)/static_cast<double>(n)};
     const double f_68_a{static_cast<double>(n_68_a)/static_cast<double>(n)};

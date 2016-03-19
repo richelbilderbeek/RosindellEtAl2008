@@ -90,11 +90,11 @@ MasterControl::MasterControl(Context *context):
     Application(context)
 {
   {
-    const int error{std::system("ln -s ../../Libraries/Urho3D/bin/Data")};
+    const int error{std::system("ln -s ../RosindellEtAl2008/Urho3D/bin/Data")};
     if (error) {}
   }
   {
-    const int error{std::system("ln -s ../../Libraries/Urho3D/bin/CoreData")};
+    const int error{std::system("ln -s ../RosindellEtAl2008/Urho3D/bin/CoreData")};
     if (error) {}
   }
 }
