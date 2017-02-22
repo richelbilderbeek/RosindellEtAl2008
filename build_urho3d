@@ -1,4 +1,7 @@
 #!/bin/sh
+
+# Build the Urho3D library in a local folder
+
 if [ ! -d Urho3D ]
 then
   #git clone https://github.com/Urho3D/Urho3D
