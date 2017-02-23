@@ -8,8 +8,6 @@ before_install:
   - sudo apt-get update -qq
   # Codecov
   - sudo pip install codecov
-  # OCLint
-  - ./install_oclint
 
 install:
   # C++14
@@ -60,8 +58,6 @@ script:
   # Get code coverage
   - ./get_code_cov
   - codecov
-  # Call OCLint
-  - ./do_oclint
 
 after_success:
   # Codecov
