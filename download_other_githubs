@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# Downloads the GitHubs needed
+
 cd ..
 git clone https://github.com/richelbilderbeek/RibiClasses
 git clone https://github.com/richelbilderbeek/RibiLibraries
