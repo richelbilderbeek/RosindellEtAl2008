@@ -4,7 +4,10 @@
 
 if [ ! -d Urho3D ]
 then
+  # The original one
   #git clone https://github.com/Urho3D/Urho3D
+
+  # Modified slightly by richelbilderbeek
   git clone https://github.com/richelbilderbeek/Urho3D
 fi
 
