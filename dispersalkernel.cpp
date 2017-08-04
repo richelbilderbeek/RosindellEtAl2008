@@ -39,7 +39,8 @@ std::string ToStr(const DispersalKernel kernel) noexcept
     case DispersalKernel::normal: return "normal";
     case DispersalKernel::square: return "square";
   }
-  throw std::logic_error("ToStr(const DispersalKernel kernel)");
+  assert(!"Should never get here");
+  return "";
 }
 
 std::ostream& operator<<(std::ostream& os, const DispersalKernel kernel) noexcept

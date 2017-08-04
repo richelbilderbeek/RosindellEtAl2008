@@ -55,7 +55,8 @@ int Rng::GetRandomInt(const int max) noexcept
       return x;
     }
   }
-  throw std::logic_error("Rng::GetRandomInt"); //Yes, the program will crash, due to noexcept
+  assert(!"Should never get here");
+  return 0;
 }
 
 double Rng::GetRandomNormal() noexcept
@@ -72,5 +73,6 @@ double Rng::GetRandomNormal() noexcept
       return x;
     }
   }
-  throw std::logic_error("Rng::GetRandomNormal"); //Yes, the program will crash, due to noexcept
+  assert(!"Should never get here");
+  return 0.0;
 }

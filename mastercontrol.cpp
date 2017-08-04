@@ -66,7 +66,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #include <Urho3D/IO/FileSystem.h>
 #include <Urho3D/IO/Log.h>
 #include <Urho3D/Physics/CollisionShape.h>
-#include <Urho3D/Physics/PhysicsWorld.h>
+//#include <Urho3D/Physics/PhysicsWorld.h>
 #include <Urho3D/Resource/ResourceCache.h>
 #include <Urho3D/Resource/Resource.h>
 #include <Urho3D/Resource/XMLFile.h>
@@ -84,7 +84,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #include "rng.h"
 #include "tree.h"
 
-DEFINE_APPLICATION_MAIN(MasterControl);
+URHO3D_DEFINE_APPLICATION_MAIN(MasterControl);
 
 MasterControl::MasterControl(Context *context):
     Application(context)
@@ -221,11 +221,11 @@ void MasterControl::CreateScene()
   {
     world_.scene->CreateComponent<Octree>();
   }
-  //Create the physics
-  {
-    PhysicsWorld * const physicsWorld = world_.scene->CreateComponent<PhysicsWorld>();
-    physicsWorld->SetGravity(Vector3::ZERO);
-  }
+  //Create the physics, not now
+  //{
+  //  PhysicsWorld * const physicsWorld = world_.scene->CreateComponent<PhysicsWorld>();
+  //  physicsWorld->SetGravity(Vector3::ZERO);
+  //}
 
   world_.scene->CreateComponent<DebugRenderer>();
 

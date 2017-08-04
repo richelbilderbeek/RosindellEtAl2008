@@ -30,6 +30,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 //---------------------------------------------------------------------------
 #pragma once
 
+#include <Urho3D/Urho3D.h>
 #include "mastercontrol.h"
 
 namespace Urho3D {
@@ -47,7 +48,7 @@ using namespace Urho3D;
 
 class CameraMaster : public Object
 {
-    OBJECT(CameraMaster);
+    URHO3D_OBJECT(CameraMaster, Object);
     friend class MasterControl;
     friend class InputMaster;
 public:
