@@ -14,7 +14,10 @@ include(../RibiLibraries/GeneralConsole.pri)
 
 include(RosindellEtAl2008Console.pri)
 
-#INCLUDEPATH += \
+INCLUDEPATH += \
+    /usr/share/include/Urho3D/include \
+    /usr/share/include/Urho3D/include/Urho3D/ThirdParty \
+    /usr/include/SDL2
 #    ../Urho3D/include \
 #    ../Urho3D/include/Urho3D/ThirdParty
 
