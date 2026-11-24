@@ -1,5 +1,7 @@
 # RosindellEtAl2008
 
+[Go to the nicely rendered website](https://richelbilderbeek.github.io/RosindellEtAl2008/).
+
 [![Travis CI logo](TravisCI.png)](https://travis-ci.org)
 ![Whitespace](Whitespace.png)
 [![Codecov logo](Codecov.png)](https://www.codecov.io)
