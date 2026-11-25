@@ -34,7 +34,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #include <iterator>
 
 #include "fileio.h"
-#include "testtimer.h"
 #include "tree.h"
 
 void Simulation::Test() noexcept
@@ -50,7 +49,6 @@ void Simulation::Test() noexcept
     Tree::Test();
   }
   const bool thorough{true};
-  const ribi::TestTimer test_timer(__func__,__FILE__,thorough ? 20.0 : 10.0);
   //Test some known runs
   {
     std::vector<double> specset;

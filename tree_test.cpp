@@ -31,7 +31,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #include <cassert>
 #include <iostream>
 
-#include "testtimer.h"
 
 void Tree::Test() noexcept
 {
@@ -43,7 +42,6 @@ void Tree::Test() noexcept
   {
     Rng::Test();
   }
-  const ribi::TestTimer test_timer(__func__,__FILE__,2.0);
   Rng rng(0,Rng::Type::bilderbeek);
   const int area_width{4};
   const int area_length{1};

@@ -32,7 +32,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #include <cassert>
 #include <iostream>
 
-#include "testtimer.h"
 
 void Rng::Test() noexcept
 {
@@ -41,7 +40,6 @@ void Rng::Test() noexcept
     if (is_tested) return;
     is_tested = true;
   }
-  const ribi::TestTimer test_timer(__func__,__FILE__,1.0);
   Rng a(0,Type::rosindell);
   Rng b(0,Type::bilderbeek);
   //GetRandomInt
