@@ -36,3 +36,7 @@ ui_*
 moc_*
 
 site/
+
+wordlist.dic
+
+coverage/
